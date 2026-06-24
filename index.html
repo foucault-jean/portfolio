@@ -15,7 +15,7 @@
 
 <div class="grid-overlay" aria-hidden="true"></div>
 
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+<a class="skip-link" href="#contenu" data-i18n="skip-link">Aller au contenu</a>
 
 <header class="site-header">
   <div class="header-inner">
@@ -23,23 +23,24 @@
       <span class="logo-mark" aria-hidden="true">JF</span>
     </a>
     <nav class="main-nav" aria-label="Navigation principale">
-      <a href="#profil">Profil</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#projets">Projets</a>
-      <a href="#competences">Compétences</a>
-      <a href="#contact">Contact</a>
+      <a href="#profil" data-i18n="nav-profil">Profil</a>
+      <a href="#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="#projets" data-i18n="nav-projets">Projets</a>
+      <a href="#competences" data-i18n="nav-competences">Compétences</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn btn-ghost nav-cta">Me contacter</a>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch to English">FR</button>
+    <a href="#contact" class="btn btn-ghost nav-cta" data-i18n="nav-cta">Me contacter</a>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
-    <a href="#profil">Profil</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="#contact">Contact</a>
+    <a href="#profil" data-i18n="nav-profil">Profil</a>
+    <a href="#parcours" data-i18n="nav-parcours">Parcours</a>
+    <a href="#projets" data-i18n="nav-projets">Projets</a>
+    <a href="#competences" data-i18n="nav-competences">Compétences</a>
+    <a href="#contact" data-i18n="nav-contact">Contact</a>
   </nav>
 </header>
 
@@ -49,19 +50,19 @@
   <section class="hero" id="top">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 00</span> Product Manager senior · Formation ingénieur</p>
-        <h1>Je transforme le chaos technique<br> en produits qui scalent.</h1>
-        <p class="hero-sub">Diplômé ingénieur (Centrale Nantes) et Product Manager depuis près de dix ans, je
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 00</span> <span data-i18n="hero-eyebrow">Product Manager senior · Formation ingénieur</span></p>
+        <h1 data-i18n="hero-h1">Je transforme le chaos technique<br> en produits qui scalent.</h1>
+        <p class="hero-sub" data-i18n="hero-sub">Diplômé ingénieur (Centrale Nantes) et Product Manager depuis près de dix ans, je
           construis des plateformes uniques et prêtes pour l'IA à partir de systèmes fragmentés, sous contrainte
           réelle de delivery, de churn ou de temps.</p>
         <div class="hero-actions">
-          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-          <a href="#contact" class="btn btn-outline">Me contacter</a>
+          <a href="#projets" class="btn btn-primary" data-i18n="hero-btn-projects">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero-btn-contact">Me contacter</a>
           <a href="https://www.linkedin.com/in/foucault-jean" class="link-arrow" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
 
-      <div class="hero-diagram" role="img" aria-label="Schéma illustrant la transformation de systèmes fragmentés en une plateforme unique, avec les indicateurs : 10 configurations clients vers 1 plateforme, 30 pourcent vers 85 pourcent de taux de validation OCR, 3 semaines vers 1,5 jour de connexion, 3500 hôtels réouverts en 2 semaines.">
+      <div class="hero-diagram" role="img" data-i18n-aria="svg-aria" aria-label="Schéma illustrant la transformation de systèmes fragmentés en une plateforme unique, avec les indicateurs : 10 configurations clients vers 1 plateforme, 30 pourcent vers 85 pourcent de taux de validation OCR, 3 semaines vers 1,5 jour de connexion, 3500 hôtels réouverts en 2 semaines.">
         <svg viewBox="0 0 640 520" xmlns="http://www.w3.org/2000/svg" class="schematic" id="heroSvg">
           <!-- fragmented shapes (left) -->
           <g class="frag" stroke="#5B7390" stroke-width="1.5" fill="none">
@@ -95,19 +96,19 @@
             <line x1="20" y1="412" x2="96" y2="412" stroke="#3A5170" stroke-width="1"/>
             <line x1="20" y1="406" x2="20" y2="418" stroke="#3A5170" stroke-width="1"/>
             <line x1="96" y1="406" x2="96" y2="418" stroke="#3A5170" stroke-width="1"/>
-            <text x="20" y="434">10+ configs clients</text>
+            <text x="20" y="434" data-i18n="svg-frag-label">10+ configs clients</text>
 
             <line x1="350" y1="412" x2="430" y2="412" stroke="#3A5170" stroke-width="1"/>
             <line x1="350" y1="406" x2="350" y2="418" stroke="#3A5170" stroke-width="1"/>
             <line x1="430" y1="406" x2="430" y2="418" stroke="#3A5170" stroke-width="1"/>
-            <text x="350" y="434" fill="#ECEFF3">1 plateforme · 0 churn</text>
+            <text x="350" y="434" fill="#ECEFF3" data-i18n="svg-unified-label">1 plateforme · 0 churn</text>
 
-            <text x="20" y="40" fill="#5B7390">FRAGMENTÉ</text>
-            <text x="400" y="100" fill="#ECEFF3" text-anchor="middle">UNIFIÉ</text>
+            <text x="20" y="40" fill="#5B7390" data-i18n="svg-frag-title">FRAGMENTÉ</text>
+            <text x="400" y="100" fill="#ECEFF3" text-anchor="middle" data-i18n="svg-unified-title">UNIFIÉ</text>
 
-            <text x="20" y="470" fill="#8FA0B5">30% → 85% validation OCR (6 sem.)</text>
-            <text x="20" y="492" fill="#8FA0B5">3 sem. → 1,5 jour de connexion</text>
-            <text x="20" y="514" fill="#8FA0B5">3 500 hôtels réouverts en 2 sem.</text>
+            <text x="20" y="470" fill="#8FA0B5" data-i18n="svg-stat-1">30% → 85% validation OCR (6 sem.)</text>
+            <text x="20" y="492" fill="#8FA0B5" data-i18n="svg-stat-2">3 sem. → 1,5 jour de connexion</text>
+            <text x="20" y="514" fill="#8FA0B5" data-i18n="svg-stat-3">3 500 hôtels réouverts en 2 sem.</text>
           </g>
         </svg>
       </div>
@@ -119,26 +120,26 @@
   <section class="section" id="profil">
     <div class="section-inner profil-grid">
       <div class="section-head">
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 01</span> Profil</p>
-        <h2>Le pont entre la technique<br>et le produit.</h2>
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 01</span> <span data-i18n="profil-eyebrow">Profil</span></p>
+        <h2 data-i18n="profil-h2">Le pont entre la technique<br>et le produit.</h2>
       </div>
       <div class="profil-body">
-        <p>Diplômé ingénieur de l'École Centrale de Nantes, j'ai commencé ma carrière comme développeur full-stack
+        <p data-i18n="profil-p1">Diplômé ingénieur de l'École Centrale de Nantes, j'ai commencé ma carrière comme développeur full-stack
           chez Capgemini, sur des plateformes critiques pour Air Liquide, l'ANSM et l'IFRI. J'ai ensuite construit
           ma trajectoire de Product Manager chez Accor, Pricemoov puis Trace for Good, en gardant toujours ce
           double regard : produit et technique.</p>
-        <p>Cette double formation est mon atout central. Je comprends ce qui se passe sous le capot, je peux
+        <p data-i18n="profil-p2">Cette double formation est mon atout central. Je comprends ce qui se passe sous le capot, je peux
           dialoguer avec une équipe d'ingénieurs sur ses propres termes, et je garde un œil exigeant sur la donnée,
           l'architecture et la scalabilité d'un produit, pas seulement sur son backlog.</p>
-        <p>Aujourd'hui, je me concentre sur les produits IA : structures de données prêtes pour l'IA, automatisation
+        <p data-i18n="profil-p3">Aujourd'hui, je me concentre sur les produits IA : structures de données prêtes pour l'IA, automatisation
           des opérations, et construction de vision produit à l'aide des outils d'IA eux-mêmes. Je m'épanouis à
           l'intersection de l'innovation et de l'impact.</p>
 
         <div class="fact-grid">
-          <div class="fact"><span class="fact-num">~10 ans</span><span class="fact-label">d'expérience produit &amp; tech</span></div>
-          <div class="fact"><span class="fact-num">Centrale Nantes</span><span class="fact-label">Diplôme d'ingénieur généraliste</span></div>
-          <div class="fact"><span class="fact-num">PSPO I</span><span class="fact-label">Professional Scrum Product Owner</span></div>
-          <div class="fact"><span class="fact-num">FR · EN · ES</span><span class="fact-label">TOEIC 915/990</span></div>
+          <div class="fact"><span class="fact-num" data-i18n="fact-num-1">~10 ans</span><span class="fact-label" data-i18n="fact-label-1">d'expérience produit &amp; tech</span></div>
+          <div class="fact"><span class="fact-num">Centrale Nantes</span><span class="fact-label" data-i18n="fact-label-2">Diplôme d'ingénieur généraliste</span></div>
+          <div class="fact"><span class="fact-num">PSPO I</span><span class="fact-label" data-i18n="fact-label-3">Professional Scrum Product Owner</span></div>
+          <div class="fact"><span class="fact-num">FR · EN · ES</span><span class="fact-label" data-i18n="fact-label-4">TOEIC 915/990</span></div>
         </div>
       </div>
     </div>
@@ -148,19 +149,19 @@
   <section class="section section-alt" id="parcours">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 02</span> Parcours</p>
-        <h2>Dix ans, quatre entreprises,<br>une trajectoire.</h2>
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 02</span> <span data-i18n="parcours-eyebrow">Parcours</span></p>
+        <h2 data-i18n="parcours-h2">Dix ans, quatre entreprises,<br>une trajectoire.</h2>
       </div>
 
       <ol class="timeline">
         <li class="timeline-item">
           <div class="timeline-meta">
-            <span class="timeline-date">sept. 2024 → aujourd'hui</span>
-            <span class="timeline-metric">ARR x2 en 12 mois · 0 churn</span>
+            <span class="timeline-date" data-i18n="tl1-date">sept. 2024 → aujourd'hui</span>
+            <span class="timeline-metric" data-i18n="tl1-metric">ARR x2 en 12 mois · 0 churn</span>
           </div>
           <div class="timeline-content">
-            <h3>Trace for Good <span class="role">— First Product Manager</span></h3>
-            <p>Premier Product Manager de l'entreprise. Construction de la fonction produit depuis zéro, structure
+            <h3 data-i18n="tl1-title">Trace for Good <span class="role">— First Product Manager</span></h3>
+            <p data-i18n="tl1-p">Premier Product Manager de l'entreprise. Construction de la fonction produit depuis zéro, structure
               de données prête pour l'IA (intégration OCR), automatisation des opérations avec n8n et Make, et
               mise en place des rituels de communication entre Produit, Engineering, Sales et Customer Success.</p>
           </div>
@@ -168,12 +169,12 @@
 
         <li class="timeline-item">
           <div class="timeline-meta">
-            <span class="timeline-date">avr. 2022 → oct. 2024</span>
-            <span class="timeline-metric">400M+ prix calculés / jour</span>
+            <span class="timeline-date" data-i18n="tl2-date">avr. 2022 → oct. 2024</span>
+            <span class="timeline-metric" data-i18n="tl2-metric">400M+ prix calculés / jour</span>
           </div>
           <div class="timeline-content">
-            <h3>Pricemoov <span class="role">— Senior Product Manager</span></h3>
-            <p>Vision produit et pilotage de squads sur des stratégies de pricing data-driven, en collaboration
+            <h3 data-i18n="tl2-title">Pricemoov <span class="role">— Senior Product Manager</span></h3>
+            <p data-i18n="tl2-p">Vision produit et pilotage de squads sur des stratégies de pricing data-driven, en collaboration
               avec les équipes ML/Data. Roadmaps priorisées avec RICE et MoSCoW, contribution à une levée de fonds
               de plus de 10M€.</p>
           </div>
@@ -181,12 +182,12 @@
 
         <li class="timeline-item">
           <div class="timeline-meta">
-            <span class="timeline-date">mai 2021 → juil. 2022</span>
-            <span class="timeline-metric">0 churn sur la migration</span>
+            <span class="timeline-date" data-i18n="tl3-date">mai 2021 → juil. 2022</span>
+            <span class="timeline-metric" data-i18n="tl3-metric">0 churn sur la migration</span>
           </div>
           <div class="timeline-content">
-            <h3>Pricemoov <span class="role">— Solution Delivery Manager</span></h3>
-            <p>Pilotage de la SaaSification de la plateforme (10+ instances clients vers une plateforme unique) en
+            <h3 data-i18n="tl3-title">Pricemoov <span class="role">— Solution Delivery Manager</span></h3>
+            <p data-i18n="tl3-p">Pilotage de la SaaSification de la plateforme (10+ instances clients vers une plateforme unique) en
               parallèle d'une collaboration multimillion-euro avec CMA-CGM. Management fonctionnel de deux équipes,
               soit 12 ingénieurs.</p>
           </div>
@@ -194,12 +195,12 @@
 
         <li class="timeline-item">
           <div class="timeline-meta">
-            <span class="timeline-date">nov. 2017 → avr. 2021</span>
-            <span class="timeline-metric">3 500+ hôtels · 5 000+ WAU</span>
+            <span class="timeline-date" data-i18n="tl4-date">nov. 2017 → avr. 2021</span>
+            <span class="timeline-metric" data-i18n="tl4-metric">3 500+ hôtels · 5 000+ WAU</span>
           </div>
           <div class="timeline-content">
-            <h3>Accor <span class="role">— Product Owner</span></h3>
-            <p>Gestion et transformation d'un portefeuille de produits digitaux B2B/B2C pour plus de 3 500 hôtels.
+            <h3 data-i18n="tl4-title">Accor <span class="role">— Product Owner</span></h3>
+            <p data-i18n="tl4-p">Gestion et transformation d'un portefeuille de produits digitaux B2B/B2C pour plus de 3 500 hôtels.
               Pilotage en 2 semaines, en plein premier confinement, du module de validation des certifications
               sanitaires ayant permis la réouverture du groupe.</p>
           </div>
@@ -207,12 +208,12 @@
 
         <li class="timeline-item">
           <div class="timeline-meta">
-            <span class="timeline-date">oct. 2015 → oct. 2017</span>
-            <span class="timeline-metric">-30% sur les délais de delivery</span>
+            <span class="timeline-date" data-i18n="tl5-date">oct. 2015 → oct. 2017</span>
+            <span class="timeline-metric" data-i18n="tl5-metric">-30% sur les délais de delivery</span>
           </div>
           <div class="timeline-content">
-            <h3>Capgemini <span class="role">— Software Engineer</span></h3>
-            <p>Développement full-stack pour Air Liquide, l'ANSM et l'IFRI. Automatisation des pipelines de
+            <h3 data-i18n="tl5-title">Capgemini <span class="role">— Software Engineer</span></h3>
+            <p data-i18n="tl5-p">Développement full-stack pour Air Liquide, l'ANSM et l'IFRI. Automatisation des pipelines de
               delivery, mise en place de JIRA et Confluence, et co-pilotage d'un déploiement multi-site à Rabat.</p>
           </div>
         </li>
@@ -224,59 +225,59 @@
   <section class="section" id="projets">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 03</span> Projets</p>
-        <h2>Six décisions,<br>six résultats mesurables.</h2>
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 03</span> <span data-i18n="projets-eyebrow">Projets</span></p>
+        <h2 data-i18n="projets-h2">Six décisions,<br>six résultats mesurables.</h2>
       </div>
 
       <div class="project-grid">
 
         <article class="project-card">
           <p class="project-tag">Trace for Good</p>
-          <h3>Communication Studio</h3>
-          <p>Module construit de zéro pour remplacer des fiches produit custom par client, ingérables et non
+          <h3 data-i18n="proj1-h3">Communication Studio</h3>
+          <p data-i18n="proj1-p">Module construit de zéro pour remplacer des fiches produit custom par client, ingérables et non
             scalables. Vision bâtie sur personas, audit marché et ROI estimé, pour convaincre une direction
             initialement sceptique. Livré en 2,5 mois.</p>
-          <p class="project-metric">1/3 des montants contractés sur les nouveaux clients</p>
+          <p class="project-metric" data-i18n="proj1-metric">1/3 des montants contractés sur les nouveaux clients</p>
         </article>
 
         <article class="project-card">
           <p class="project-tag">Pricemoov</p>
-          <h3>SaaSification de la plateforme</h3>
-          <p>Transformation d'une architecture "une instance par client" en plateforme SaaS unique et modulaire,
+          <h3 data-i18n="proj2-h3">SaaSification de la plateforme</h3>
+          <p data-i18n="proj2-p">Transformation d'une architecture "une instance par client" en plateforme SaaS unique et modulaire,
             sous une contrainte non négociable : zéro churn. Management fonctionnel de 6 ingénieurs sur 12 mois.</p>
-          <p class="project-metric">10+ configurations → 1 plateforme · 0 churn</p>
+          <p class="project-metric" data-i18n="proj2-metric">10+ configurations → 1 plateforme · 0 churn</p>
         </article>
 
         <article class="project-card">
           <p class="project-tag">Trace for Good</p>
-          <h3>Refonte du Login</h3>
-          <p>Diagnostic via Hotjar et interviews multilingues d'une friction de connexion fournisseurs jugée
+          <h3 data-i18n="proj3-h3">Refonte du Login</h3>
+          <p data-i18n="proj3-p">Diagnostic via Hotjar et interviews multilingues d'une friction de connexion fournisseurs jugée
             "mineure". Conception d'un stepper avec routage automatique par email et magic link.</p>
-          <p class="project-metric">3 semaines → 1,5 jour de time-to-first-connection</p>
+          <p class="project-metric" data-i18n="proj3-metric">3 semaines → 1,5 jour de time-to-first-connection</p>
         </article>
 
         <article class="project-card">
           <p class="project-tag">Trace for Good</p>
-          <h3>OCR &amp; Validation documentaire</h3>
-          <p>Conception d'une architecture OCR en dual-run pour fiabiliser la validation automatique des documents
+          <h3 data-i18n="proj4-h3">OCR &amp; Validation documentaire</h3>
+          <p data-i18n="proj4-p">Conception d'une architecture OCR en dual-run pour fiabiliser la validation automatique des documents
             de traçabilité, en collaboration avec l'équipe technique.</p>
-          <p class="project-metric">30% → 85% de taux de validation en 6 semaines</p>
+          <p class="project-metric" data-i18n="proj4-metric">30% → 85% de taux de validation en 6 semaines</p>
         </article>
 
         <article class="project-card">
           <p class="project-tag">Trace for Good</p>
-          <h3>Build or Buy : Metabase</h3>
-          <p>Analyse build vs buy rigoureuse face à une demande croissante de dashboards et une équipe engineering
+          <h3 data-i18n="proj5-h3">Build or Buy : Metabase</h3>
+          <p data-i18n="proj5-p">Analyse build vs buy rigoureuse face à une demande croissante de dashboards et une équipe engineering
             mobilisée sur des sujets de fond. Intégration de Metabase en self-hosted, sans dépendance fournisseur.</p>
-          <p class="project-metric">-92% time-to-report · +15 000$ de revenus en 3 mois</p>
+          <p class="project-metric" data-i18n="proj5-metric">-92% time-to-report · +15 000$ de revenus en 3 mois</p>
         </article>
 
         <article class="project-card">
           <p class="project-tag">Accor</p>
-          <h3>Gestion de crise sanitaire</h3>
-          <p>Pilotage en full remote, en plein premier confinement, d'un module d'hébergement et de validation des
+          <h3 data-i18n="proj6-h3">Gestion de crise sanitaire</h3>
+          <p data-i18n="proj6-p">Pilotage en full remote, en plein premier confinement, d'un module d'hébergement et de validation des
             certifications sanitaires, condition de réouverture des hôtels du groupe.</p>
-          <p class="project-metric">3 500+ hôtels réouverts en 2 semaines (vs 3 planifiées)</p>
+          <p class="project-metric" data-i18n="proj6-metric">3 500+ hôtels réouverts en 2 semaines (vs 3 planifiées)</p>
         </article>
 
       </div>
@@ -287,47 +288,47 @@
   <section class="section section-alt" id="competences">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 04</span> Compétences</p>
-        <h2>Deux métiers,<br>une seule pratique.</h2>
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 04</span> <span data-i18n="competences-eyebrow">Compétences</span></p>
+        <h2 data-i18n="competences-h2">Deux métiers,<br>une seule pratique.</h2>
       </div>
 
       <div class="skills-grid">
         <div class="skill-col">
-          <h3>Produit</h3>
+          <h3 data-i18n="skill-produit-h3">Produit</h3>
           <ul>
-            <li>Discovery &amp; vision produit</li>
-            <li>Roadmapping (RICE, MoSCoW)</li>
-            <li>Construction zero-to-one</li>
-            <li>Leadership cross-fonctionnel</li>
-            <li>Stakeholder &amp; change management</li>
-            <li>Arbitrage build vs buy</li>
+            <li data-i18n="skill-produit-li1">Discovery &amp; vision produit</li>
+            <li data-i18n="skill-produit-li2">Roadmapping (RICE, MoSCoW)</li>
+            <li data-i18n="skill-produit-li3">Construction zero-to-one</li>
+            <li data-i18n="skill-produit-li4">Leadership cross-fonctionnel</li>
+            <li data-i18n="skill-produit-li5">Stakeholder &amp; change management</li>
+            <li data-i18n="skill-produit-li6">Arbitrage build vs buy</li>
           </ul>
         </div>
         <div class="skill-col">
-          <h3>Technique</h3>
+          <h3 data-i18n="skill-tech-h3">Technique</h3>
           <ul>
-            <li>Formation ingénieur full-stack</li>
-            <li>Architecture &amp; structure de données</li>
-            <li>Agile / Scrum (JIRA, Confluence)</li>
-            <li>Dialogue natif avec les équipes engineering</li>
+            <li data-i18n="skill-tech-li1">Formation ingénieur full-stack</li>
+            <li data-i18n="skill-tech-li2">Architecture &amp; structure de données</li>
+            <li data-i18n="skill-tech-li3">Agile / Scrum (JIRA, Confluence)</li>
+            <li data-i18n="skill-tech-li4">Dialogue natif avec les équipes engineering</li>
           </ul>
         </div>
         <div class="skill-col">
-          <h3>IA &amp; outils</h3>
+          <h3 data-i18n="skill-ai-h3">IA &amp; outils</h3>
           <ul>
-            <li>Structures de données prêtes pour l'IA</li>
-            <li>OCR / Document AI</li>
-            <li>Automatisation (n8n, Make)</li>
-            <li>BI self-hosted (Metabase)</li>
+            <li data-i18n="skill-ai-li1">Structures de données prêtes pour l'IA</li>
+            <li data-i18n="skill-ai-li2">OCR / Document AI</li>
+            <li data-i18n="skill-ai-li3">Automatisation (n8n, Make)</li>
+            <li data-i18n="skill-ai-li4">BI self-hosted (Metabase)</li>
           </ul>
         </div>
         <div class="skill-col">
-          <h3>Langues &amp; formation</h3>
+          <h3 data-i18n="skill-lang-h3">Langues &amp; formation</h3>
           <ul>
-            <li>Français (natif)</li>
-            <li>Anglais (TOEIC 915/990)</li>
-            <li>Espagnol (élémentaire)</li>
-            <li>École Centrale de Nantes (2013–2017)</li>
+            <li data-i18n="skill-lang-li1">Français (natif)</li>
+            <li data-i18n="skill-lang-li2">Anglais (TOEIC 915/990)</li>
+            <li data-i18n="skill-lang-li3">Espagnol (élémentaire)</li>
+            <li data-i18n="skill-lang-li4">École Centrale de Nantes (2013–2017)</li>
           </ul>
         </div>
       </div>
@@ -338,15 +339,15 @@
   <section class="section contact-section" id="contact">
     <div class="section-inner contact-inner">
       <div>
-        <p class="eyebrow"><span class="eyebrow-tag">FIG. 05</span> Contact</p>
-        <h2>Discutons de votre<br>prochain produit IA.</h2>
-        <p class="hero-sub">Basé à Paris. Toujours curieux d'échanger sur les produits IA, la structuration d'une
+        <p class="eyebrow"><span class="eyebrow-tag">FIG. 05</span> <span data-i18n="contact-eyebrow">Contact</span></p>
+        <h2 data-i18n="contact-h2">Discutons de votre<br>prochain produit IA.</h2>
+        <p class="hero-sub" data-i18n="contact-sub">Basé à Paris. Toujours curieux d'échanger sur les produits IA, la structuration d'une
           fonction produit ou un défi technique à transformer en opportunité.</p>
       </div>
       <div class="contact-actions">
         <a href="mailto:foucault.jean@live.fr" class="btn btn-primary">foucault.jean@live.fr</a>
         <a href="https://www.linkedin.com/in/foucault-jean" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <p class="location">Paris, Île-de-France, France</p>
+        <p class="location" data-i18n="contact-location">Paris, Île-de-France, France</p>
       </div>
     </div>
   </section>
@@ -357,7 +358,7 @@
   <div class="section-inner footer-inner">
     <span>© 2026 Jean Foucault</span>
     <span class="footer-sep">·</span>
-    <span>Product Manager senior · Formation ingénieur</span>
+    <span data-i18n="footer-role">Product Manager senior · Formation ingénieur</span>
   </div>
 </footer>
 
